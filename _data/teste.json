@@ -5,7 +5,7 @@
 	"url_edital": "www.google.com",
 	"inscrição":
 		{
-			"custo": 55,
+			"custo": 57,
 			"data_inicio": "2016-12-30",
 			"data_fim": "2017-01-30",
 			"url_inscricao": "google.com",
@@ -15,7 +15,7 @@
 			"profissao": "engenheiro_civil",
 			"vagas": {
 				"local": "cidade_rio_de_janeiro",
-				"vagas_PNE": 2,
+				"vagas_PNE": 3,
 				"vagas_livre_conc": 5,
 			}
 
