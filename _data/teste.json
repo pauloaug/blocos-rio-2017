@@ -8,7 +8,7 @@
 			"custo": 57,
 			"data_inicio": "2016-12-30",
 			"data_fim": "2017-01-30",
-			"url_inscricao": "google.com",
+			"url_inscricao": "google.com"
 		}
 	"cargos":
 		{ 	"id": "prof1",
@@ -16,7 +16,7 @@
 			"vagas": {
 				"local": "cidade_rio_de_janeiro",
 				"vagas_PNE": 3,
-				"vagas_livre_conc": 5,
+				"vagas_livre_conc": 5
 			}
 
 
