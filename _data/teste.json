@@ -9,7 +9,7 @@
 			"data_inicio": "2016-12-30",
 			"data_fim": "2017-01-30",
 			"url_inscricao": "google.com"
-		}
+		},
 	"cargos":
 		{ 	"id": "prof1",
 			"profissao": "engenheiro_civil",
@@ -18,8 +18,5 @@
 				"vagas_PNE": 3,
 				"vagas_livre_conc": 5
 			}
-
-
 		}
-
 }
