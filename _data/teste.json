@@ -3,7 +3,7 @@
 	"name": "bar",
 	"orgao": "marinha_do_brasil",
 	"url_edital": "www.google.com",
-	"inscrição":
+	"inscricao":
 		{
 			"custo": 57,
 			"data_inicio": "2016-12-30",
@@ -11,7 +11,7 @@
 			"url_inscricao": "google.com"
 		},
 	"cargos":
-		{ 	"id": "prof1",
+		{ 	"id": "profissao_01",
 			"profissao": "engenheiro_civil",
 			"vagas": {
 				"local": "cidade_rio_de_janeiro",
