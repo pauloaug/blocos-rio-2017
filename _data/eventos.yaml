@@ -1,22 +1,23 @@
 ---
 "@context": http://schema.org
-"@type": MusicEvent
-location:
-  "@type": MusicVenue
-  name: Circo Voador
-  address: Rua dos Arcos
-name: "Vivo! Revivo!"
-offers:
-  "@type": Offer
-  url: "/examples/ticket/12341234"
-  price: '40'
-  priceCurrency: BRL
-  availability: http://schema.org/InStock
-performer:
-- "@type": Person
-  name: Alceu Valença
-  sameAs:
-  - http://cso.org/
-  - http://en.wikipedia.org/wiki/Chicago_Symphony_Orchestra
-startDate: 2017-01-12T22:00
+eventos:
+  - "@type": MusicEvent
+    location:
+      "@type": MusicVenue
+      name: Circo Voador
+      address: Rua dos Arcos
+    name: "Vivo! Revivo!"
+    offers:
+      "@type": Offer
+      url: "/examples/ticket/12341234"
+      price: '40'
+      priceCurrency: BRL
+      availability: http://schema.org/InStock
+    performer:
+    - "@type": Person
+      name: Alceu Valença
+      sameAs:
+      - http://cso.org/
+      - http://en.wikipedia.org/wiki/Chicago_Symphony_Orchestra
+    startDate: 2017-01-12T22:00
 
