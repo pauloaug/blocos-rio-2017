@@ -5,19 +5,13 @@ title: You're up and running!
 
 # Teste
 
-
-
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
 teste {{ page.title }} abc
 
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-aaaaa
-
-- um
-- dois
-
 {{ site.data.teste.name }}
+
+## teste do primeiro evento: {{site.data.eventos[0]}}
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
