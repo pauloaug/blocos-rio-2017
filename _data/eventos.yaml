@@ -1,6 +1,8 @@
 ---
 "@context": http://schema.org
 
+foo: funcionou
+
 eventos:
 
   - "@type": MusicEvent
