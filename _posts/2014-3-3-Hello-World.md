@@ -11,8 +11,8 @@ teste {{ page.title }} abc
 
 {{ site.data.teste.name }}
 
-## teste do primeiro evento: {{site.data.eventos[0].name}}
+## teste do primeiro evento: {{site.data.eventos.first.name}}
 
-# ![_config.yml]({{ site.baseurl }}/images/config.png)
+{{site.data.@context}}
 
 The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
