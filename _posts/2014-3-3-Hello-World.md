@@ -1,9 +1,10 @@
 ---
 layout: post
-title: You're up and running!
+title: oi
 ---
 
-
-teste do primeiro evento: {{site.data.eventos.first.name}}
+{{site.data.eventos.first.name}}
 
 {{site.data.@context}}
+
+{{site.data.eventos.foo}}
