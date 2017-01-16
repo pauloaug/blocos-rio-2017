@@ -13,7 +13,7 @@ title: oi
 
 
 <table>
-{% tablerow evt in site.data.eventos.lista %}
+{% tablerow evt in site.data.eventos.lista cols:3 %}
   {{ evt.name }}
 {% endtablerow %}
 </table>
