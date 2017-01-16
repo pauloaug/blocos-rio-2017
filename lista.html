@@ -14,12 +14,13 @@ layout: default
   <tr>
     <th>Artistas:</th>
     {% for perf in evt.performer %}
+      oi
       {{ perf.name | join: ', ' }}
     {% endfor %}
   </tr>
   <tr>
     <th>ingresso:</th>
-    <td>R$ {{evt.price}},00</td>
+    <td>R$ {{evt.offers.price}},00</td>
  </tr>  
   
 123
