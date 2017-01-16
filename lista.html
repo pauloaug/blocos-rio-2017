@@ -6,7 +6,8 @@ layout: default
 
 <h1>{{ evt.name }}</h1>
 
-<script>console.log(moment.locale());</script> 
+<script>console.log(moment.locale());</script>
+<script>moment("{{ evt.startDate }}");</script>
  
 <table>
  <tr>
