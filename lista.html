@@ -44,6 +44,9 @@ layout: default
  console.log("--------------"+m);
  console.log($("#data_do_evento_{{ i }}"));
  $("#data_do_evento_{{ i }}").text(m);
+  
+ $("head").append({{ site.data.eventos | jsonify }});
+  
 </script>   
   
   
