@@ -5,7 +5,7 @@ layout: default
 {% for post in site.data.eventos.lista %}
 <article class="post">
 <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.name }}</a></h1>
-<div class="entry">
+<div>
 {{ post.location.name }}
 {{ post.performer.name }}
 </div>
