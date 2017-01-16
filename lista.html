@@ -9,6 +9,12 @@ layout: default
 <script>console.log(moment.locale());</script>
 <script>console.log(moment("{{ evt.startDate }}").format("LLLL"));</script>
  
+<script>
+ var m = moment("{{ evt.startDate }}").format("LLLL");
+ console.log("--------------"+m);
+ $("data_do_evento").text(m);
+</script> 
+ 
 <table>
  <tr>
     <th>Evento:</th>
@@ -28,13 +34,7 @@ layout: default
   </tr>
   <tr>
    <th>data:</th>
-   <td>
-    <script>
-     var m = moment("{{ evt.startDate }}").format("LLLL");
-     console.log("--------------"+m);
-     $(this).text(m);
-    </script>
-   </td>
+   <td id=data_do_evento> </td>
   </tr>
  
 </table>
