@@ -8,3 +8,5 @@ title: oi
 {{site.data[@context]}}
 
 {{site.data.eventos.foo}}
+
+{{site.data.eventos[0].location.name}}
