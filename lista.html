@@ -3,7 +3,8 @@ layout: default
 ---
 <div class="posts">
 {% for evt in site.data.eventos.lista %}
-
+  {% assign i = 0 %}
+ 
 <h1>{{ evt.name }}</h1>
 
 <script>console.log(moment.locale());</script>
@@ -38,6 +39,6 @@ layout: default
   </tr>
  
 </table>
-
+  {assign i = i + 1}
 {% endfor %}
 </div>
