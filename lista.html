@@ -2,20 +2,32 @@
 layout: default
 ---
 <div class="posts">
-{% for post in site.data.eventos.lista %}
-<article class="post">
-<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.name }}</a></h1>
-<div>
-{{ post.location.name }}
+{% for evt in site.data.eventos.lista %}
+
+<h1>{{ evt.name }}</h1>
+
+<table>
+ <tr>
+    <th>Evento:</th>
+    <td>{{ evt.location.name }}</td>
+  </tr>
+  <tr>
+    <th>Artistas:</th>
+    {% for perf in evt.performer %}
+      {{ perf.name | join: ', ' }}
+    {% endfor %}
+  </tr>
+  <tr>
+    <th>ingresso:</th>
+    <td>R$ {{evt.price}},00</td>
+ </tr>  
+  
 123
-{% for perf in post.performer %}
-  {{ perf.name }} <br>
-{% endfor %}
+
 teste
 bla
 foo aaaa
-</div>
-<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-</article>
+</table>
+
 {% endfor %}
 </div>
