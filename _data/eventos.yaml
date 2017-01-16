@@ -3,7 +3,7 @@
 
 foo: funcionou
 
-eventos:
+lista:
   - "@type": MusicEvent
     location:
       "@type": MusicVenue
