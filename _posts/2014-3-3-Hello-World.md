@@ -5,7 +5,7 @@ title: oi
 
 {{site.data.eventos.lista}}
 
-{{site.data.eventos[@context]}}
+{{site.data.eventos["@context"]}}
 
 {{site.data.eventos.foo}}
 
