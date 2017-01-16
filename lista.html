@@ -31,6 +31,7 @@ layout: default
    <td>
     <script>
      var m = moment("{{ evt.startDate }}").format("LLLL");
+     console.log("--------------"+m);
      $(this).text(m);
     </script>
    </td>
