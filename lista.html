@@ -13,10 +13,11 @@ layout: default
   </tr>
   <tr>
     <th>Artistas:</th>
+    <td>
     {% for perf in evt.performer %}
-      oi
       {{ perf.name | join: ', ' }}
     {% endfor %}
+   </td>
   </tr>
   <tr>
     <th>ingresso:</th>
