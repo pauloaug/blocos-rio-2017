@@ -3,7 +3,7 @@ layout: post
 title: oi
 ---
 
-{{site.data.eventos.lista}}
+{{site.data.eventos.lista.first.name}}
 
 {{site.data.eventos["@context"]}}
 
