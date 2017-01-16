@@ -8,7 +8,9 @@ layout: default
 <div>
 {{ post.location.name }}
 123
-{{ post.performer.name }}
+{% for perf in post.performer %}
+  {{ perf.name }} <br>
+{% endfor %}
 teste
 bla
 foo aaaa
