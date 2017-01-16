@@ -10,3 +10,10 @@ title: oi
 {{site.data.eventos.foo}}
 
 {{site.data.eventos.lista[0].location.name}}
+
+
+<table>
+{% tablerow evt in site.data.eventos.lista %}
+  {{ evt.name }}
+{% endtablerow %}
+</table>
