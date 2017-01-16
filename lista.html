@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="posts">
 {% for evt in site.data.eventos.lista %}
-  {% assign i = 0 %}
+  {% increment i %}
  
 <h1>{{ evt.name }}</h1>
 
@@ -39,6 +39,6 @@ layout: default
   </tr>
  
 </table>
-  {% assign i = i + 1%}
+
 {% endfor %}
 </div>
