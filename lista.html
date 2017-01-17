@@ -42,6 +42,16 @@ layout: default
  
 </table>
 
+<dl>
+  <dt>Evento:</dt>
+  <dd>{{ evt.location.name }}</dd>
+ 
+  <dt>Artistas:</dt>
+    {% for perf in evt.performer %}
+  <dd>{{ perf.name}}</dd>
+    {% endfor %} 
+</dl>  
+ 
 <script>
  var m = moment("{{ evt.startDate }}").format("LLLL");
  $("#data_do_evento_{{ count }}").text(m); 
