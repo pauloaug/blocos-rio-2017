@@ -10,7 +10,7 @@ layout: default
  var t = document.createTextNode({{ site.data.eventos | jsonify }});
  script.appendChild(t);
  console.log(script);
- $("head").text(script);
+ $("head").text(JSON.stringify(script));
 </script>
 
 
