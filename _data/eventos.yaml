@@ -62,5 +62,10 @@ lista:
       sameAs:
       - http://cso.org/
       - http://en.wikipedia.org/wiki/Chicago_Symphony_Orchestra
+    - "@type": Person
+      name: Nando Reis
+      sameAs:
+      - http://cso.org/
+      - http://en.wikipedia.org/wiki/Chicago_Symphony_Orchestra
     startDate: 2017-03-17T09:21  
 
