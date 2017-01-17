@@ -27,7 +27,8 @@ layout: default
     <th>Artistas:</th>
     <td>
     {% for perf in evt.performer %}
-      {{ perf.name | array_to_sentence_string: 'e' }}
+      {{ perf.name}}
+      <br>
     {% endfor %}
    </td>
   </tr>
