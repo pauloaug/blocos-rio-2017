@@ -11,9 +11,9 @@ layout: default
 </script>
 
 
-<div class="posts">
+<div class="postss">
 
-{%- assign count = 0 -%}
+{%- assign count = 5 -%}
 {% for evt in site.data.eventos.lista %}
 
 <h1>{{ evt.name }}</h1>
@@ -46,7 +46,9 @@ layout: default
  var m = moment("{{ evt.startDate }}").format("LLLL");
  $("#data_do_evento_{{ i }}").text(m); 
 </script>   
-  
+
+ <p>count: {{ count }}</p>
+ 
   {%- assign count = count | plus: 1 -%}  
 {% endfor %}
 </div>
