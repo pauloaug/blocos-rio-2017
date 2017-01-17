@@ -18,6 +18,10 @@ layout: default
 
 <h1>{{ evt.name }}</h1>
 
+{%if evt.descricao %}
+{{ evt.description }}
+{% endif %}
+ 
  <table>
  <tr>
     <th>Evento:</th>
