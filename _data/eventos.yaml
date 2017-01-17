@@ -75,7 +75,7 @@ lista:
       "@type": MusicVenue
       name: Circo Voador
       address: Rua dos Arcos
-    name: "Show do Titãs"
+    name: "Show do Titãs no Circo Voador"
     offers:
       "@type": Offer
       url: "https://www.ingressorapido.com.br/compra/?id=55201#!/tickets"
