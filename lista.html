@@ -51,6 +51,11 @@ layout: default
  
 </table>
  
+{%if evt.fonte %}
+<p class="small"> {{ evt.fonte }} </p>
+{% endif %} 
+ 
+ 
 <script>
  var m = moment("{{ evt.startDate }}").format("LLLL");
  $("#data_do_evento_{{ count }}").text(m); 
