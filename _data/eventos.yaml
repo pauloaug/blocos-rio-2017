@@ -67,5 +67,27 @@ lista:
       sameAs:
       - http://cso.org/
       - http://en.wikipedia.org/wiki/Chicago_Symphony_Orchestra
-    startDate: 2017-03-17T09:21  
-
+    startDate: 2017-03-17T09:21
+    
+    
+  - "@type": MusicEvent
+    location:
+      "@type": MusicVenue
+      name: Circo Voador
+      address: Rua dos Arcos
+    name: "Show do Titãs"
+    offers:
+      "@type": Offer
+      url: https://www.ingressorapido.com.br/compra/?id=55201#!/tickets
+      price: '40'
+      priceCurrency: BRL
+      availability: http://schema.org/InStock
+    performer:
+    - "@type": Person
+      name: Titãs
+    - "@type": Person
+      name: Supla
+    startDate: 2017-02-04T22:00
+    description: "Show do Titãs no Circo é aquela catarse, mas a lona vai ser testemunha pela primeira vez de uma nova era da banda. Tony Belotto, Sérgio Brito e Branco Mello apresentam o imbatível repertório titânico agora com Beto Lee na guitarra e Mário Fabre na bateria. Na abertura, estreando no palco da lona, Supla! Prepare-se para uma noite insana!"
+    image: https://www.ingressorapido.com.br/ImagensSistema/Eventos/eI055201.jpg
+    url: https://www.ingressorapido.com.br/compra/?id=55201#!/tickets
