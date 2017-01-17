@@ -37,14 +37,14 @@ layout: default
   </tr>
   <tr>
    <th>data:</th>
-   <td id=data_do_evento_{{ i }}> </td>
+   <td id=data_do_evento_{{ count }}> </td>
   </tr>
  
 </table>
 
 <script>
  var m = moment("{{ evt.startDate }}").format("LLLL");
- $("#data_do_evento_{{ i }}").text(m); 
+ $("#data_do_evento_{{ count }}").text(m); 
 </script>   
 
  <p>count: {{ count }}</p>
