@@ -12,11 +12,10 @@ layout: default
 
 
 <div class="posts">
+
+{%- assign count = 0 -%}
 {% for evt in site.data.eventos.lista %}
-oioi
- {%- increment i -%}
-zzzz
- 
+
 <h1>{{ evt.name }}</h1>
 
 <table>
@@ -48,6 +47,6 @@ zzzz
  $("#data_do_evento_{{ i }}").text(m); 
 </script>   
   
-  
+  {%- assign count = count | plus: 1 -%}  
 {% endfor %}
 </div>
