@@ -18,6 +18,10 @@ layout: default
 
 <h1>{{ evt.name }}</h1>
 
+{%if evt.image %}
+ <img href="{{ evt.image }}">
+{% endif %}
+  
 {%if evt.description %}
  <p> {{ evt.description }} </p>
 {% endif %}
