@@ -3,13 +3,10 @@ layout: default
 ---
 
 <script> 
- console.log({{ site.data.eventos | jsonify }}) 
-
  var script = document.createElement( 'script' );
  script.type = 'application/ld+json'; 
  var t = document.createTextNode(JSON.stringify({{ site.data.eventos | jsonify }},null,2));
  script.appendChild(t);
- console.log(script);
  $("head").append(script);
 </script>
 
@@ -19,10 +16,6 @@ layout: default
   {% increment i %}
  
 <h1>{{ evt.name }}</h1>
-
-<script>console.log(moment.locale());</script>
-<script>console.log(moment("{{ evt.startDate }}").format("LLLL"));</script>
- 
 
 <table>
  <tr>
@@ -50,8 +43,6 @@ layout: default
 
 <script>
  var m = moment("{{ evt.startDate }}").format("LLLL");
- console.log("--------------"+m);
- console.log($("#data_do_evento_{{ i }}"));
  $("#data_do_evento_{{ i }}").text(m); 
 </script>   
   
