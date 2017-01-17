@@ -13,34 +13,11 @@ layout: default
 
 <div class="postss">
 
-{% assign count = 5 %}
+{% assign count = 0 %}
 {% for evt in site.data.eventos.lista %}
 
 <h1>{{ evt.name }}</h1>
 
-<table>
- <tr>
-    <th>Evento:</th>
-    <td>{{ evt.location.name }}</td>
-  </tr>
-  <tr>
-    <th>Artistas:</th>
-    <td>
-    {% for perf in evt.performer %}
-      {{ perf.name | join: ', ' }}
-    {% endfor %}
-   </td>
-  </tr>
-  <tr>
-    <th>Ingresso:</th>
-    <td>R$ {{ evt.offers.price }},00</td>
-  </tr>
-  <tr>
-   <th>data:</th>
-   <td id=data_do_evento_{{ count }}> </td>
-  </tr>
- 
-</table>
 
 <dl>
   <dt>Evento:</dt>
@@ -56,8 +33,6 @@ layout: default
  var m = moment("{{ evt.startDate }}").format("LLLL");
  $("#data_do_evento_{{ count }}").text(m); 
 </script>   
-
- <p>count: {{ count }}</p>
  
   {% assign count = count | plus: 1 %}  
 {% endfor %}
