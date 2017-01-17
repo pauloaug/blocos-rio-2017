@@ -45,7 +45,11 @@ layout: default
  console.log($("#data_do_evento_{{ i }}"));
  $("#data_do_evento_{{ i }}").text(m);
   
- $("head").append({{ site.data.eventos | jsonify }});
+ var script = document.createElement( 'script' );
+ script.type = 'application/ld+json'; 
+ var t = document.createTextNode({{ site.data.eventos | jsonify }});
+ script.appendChild(t); 
+ $("body").append(script);
   
 </script>   
   
