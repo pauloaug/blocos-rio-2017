@@ -7,7 +7,7 @@ layout: default
 
  var script = document.createElement( 'script' );
  script.type = 'application/ld+json'; 
- var t = document.createTextNode({{ site.data.eventos | jsonify }});
+ var t = document.createTextNode(JSON.stringify({{ site.data.eventos | jsonify }}));
  script.appendChild(t);
  console.log(script);
  $("head").append(script);
