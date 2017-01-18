@@ -23,6 +23,12 @@ layout: default
  <img src="{{ evt.image }}">
  <p> {{ evt.image }} </p>
 {% endif %}
+ 
+ 
+{% raw  %}
+ <p>{% this %}</p>
+{% endraw %} 
+ 
   
 {%if evt.description %}
  <p> {{ evt.description }} </p>
