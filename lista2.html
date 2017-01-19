@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<script>
+
+ var script = document.createElement( 'script' );
+ script.type = 'application/ld+json';
+ var dados = {{ site.data.eventos | jsonify }};
+ var t = document.createTextNode(JSON.stringify({{ site.data.eventos | jsonify }},null,2));
+ script.appendChild(t);
+ $("head").append(script);
+
+ var $el = $('#my-infinite-container');
+ var listView = new infinity.ListView($el);
+
+ // ... When adding new content:
+ var $newContent = $('<p>Hello World</p>');
+ listView.append($newContent);
+
+</script>
+
+
+
+
+
+
+
+<div id="my-infinite-container" class="lista">
+
+</div>
