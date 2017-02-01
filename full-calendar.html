@@ -21,7 +21,7 @@
 <script>
 
 	function listarEventos() {
-		var dados = {{ site.data.output.dados }};
+		var dados = JSON.stringify({{ site.data.output.dados | jsonify }},null,2);
 		var eventos = [];
 		dados.forEach(function(d){
 			eventos.push({
