@@ -16,39 +16,37 @@
 
 <script>
 
- console.log( JSON.stringify({{ site.data.output | jsonify }},null,2));
-
-	// function listarEventos() {
-	// 	var dados = JSON.stringify({{ site.data.output.dados | jsonify }},null,2);
-	// 	var eventos = [];
-	// 	dados.forEach(function(d){
-	// 		eventos.push({
-	// 			"title": d.bloco,
-	// 			"start": d.desfile,
-	// 			"end": d.final
-	// 		});
-	// 	});
-	// 	return eventos;
-	// }
+	function listarEventos() {
+		var dados = JSON.parse(JSON.stringify({{ site.data.output.dados | jsonify }},null,2));
+		var eventos = [];
+		dados.forEach(function(d){
+			eventos.push({
+				"title": d.bloco,
+				"start": d.desfile,
+				"end": d.final
+			});
+		});
+		return eventos;
+	}
 
 
-	// $(document).ready(function() {
+	$(document).ready(function() {
 		
-	// 	$('#calendar').fullCalendar({
-	// 		header: {
-	// 			left: 'prev,next today',
-	// 			center: 'title',
-	// 			right: 'month,agendaWeek,agendaDay,listWeek'
-	// 		},
-	// 		locale: "pt-br",
-	// 		defaultDate: '2017-02-17',
-	// 		navLinks: true, // can click day/week names to navigate views
-	// 		editable: false,
-	// 		eventLimit: true, // allow "more" link when too many events
-	// 		events: listarEventos()
-	// 	});
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay,listWeek'
+			},
+			locale: "pt-br",
+			defaultDate: '2017-02-17',
+			navLinks: true, // can click day/week names to navigate views
+			editable: false,
+			eventLimit: true, // allow "more" link when too many events
+			events: listarEventos()
+		});
 		
-	// });
+	});
 
 </script>
 
@@ -69,10 +67,6 @@
 </style>
 </head>
 <body>
-
-<p>{{site.data.output}}</p>
-
- {{ site.github.owner_name }}
 
 	<div id='calendar'></div>
 
