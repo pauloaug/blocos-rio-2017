@@ -83,6 +83,14 @@
       editable: false,
       eventLimit: false, // allow "more" link when too many events
       events: listarEventos(),
+
+      eventMouseover: function(event, jsEvent, view) {
+        $('.fc-event-inner', this).append('<div id=\"teste\" class=\"hover-end\">'+$.fullCalendar.formatDate(event.end, 'h:mmt')+'</div>');
+      },
+      eventMouseout: function(event, jsEvent, view) {
+          $('#teste').remove();
+      },
+      
       eventRender: function(event,element) {
         // element.append("<p> teste <p>");
       }
@@ -106,16 +114,16 @@
     margin: 0 auto;
   }
 
+  .hover-end{padding:0;margin:0;font-size:75%;text-align:center;position:absolute;bottom:0;width:100%;opacity:.8}
+
+
 </style>
 </head>
 
   <body>
 
-    <p> {{ site.baseurl }} </p>
-
     <script>
        moment.locale("pt-br");
-       console.log(moment.locale());
     </script>
     <div class="wrapper">
       <header>
