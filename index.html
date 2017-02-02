@@ -14,15 +14,40 @@
 <script src='js/locale-all.js'></script>
 
 
+
 <script>
+	
+	// criar json-ld, fb open graph e twitter card
+	var dados = {{ site.data.output.dados | jsonify }};
+	var ld = {[]};
+	ld["@context"] = "http://schema.org";
+	dados.forEach(function(d){
+		ld.push({
+			"@type": "MusicEvent",
+			"location": {
+		      "@type": "Place",
+		      "name": d["local da concentracao"],
+		      "address": d["local da concentracao"] + ", " + d.bairro + ", " + "Rio de Janeiro",
+		    },
+		    "name": d.bloco,
+		    "performer": [
+		      {
+		        "@type": "Organization",
+		        "name": d.bloco
+		      }
+		    ],
+		    "startDate": d.desfile,
+		    "endDate": d.final
+		});
+	});
+
 
 	function listarEventos() {
 		var dados = {{ site.data.output.dados | jsonify }};
-		// var dados = JSON.parse(JSON.stringify({{ site.data.output.dados | jsonify }},null,2));
 		var eventos = [];
 		dados.forEach(function(d){
 			eventos.push({
-				"title": d.bloco,
+				"title": d.bloco + " - " + d.bairro,
 				"start": d.desfile,
 				"end": d.final
 			});
