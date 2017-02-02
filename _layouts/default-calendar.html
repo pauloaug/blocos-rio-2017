@@ -60,7 +60,7 @@
         "title": d.bloco + " - " + d.bairro,
         "start": d.desfile,
         "end": d.final,
-        "description": "local da concentracao: " + d["local da concentracao"] + "\n" + "percurso: " + "\n" + d.percurso
+        "description": d.percurso
       });
     });
     return eventos;
@@ -82,9 +82,9 @@
       navLinks: true, // can click day/week names to navigate views
       editable: false,
       eventLimit: false, // allow "more" link when too many events
-      events: listarEventos()
+      events: listarEventos(),
       eventRender: function(event,element) {
-        element.append(event.description);
+        element.append("<p> teste <p>");
       }
     });
     
