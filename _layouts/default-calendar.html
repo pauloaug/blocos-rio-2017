@@ -87,9 +87,10 @@
       eventClick: function(evt, jsEvent, view) {
         $(descricao_do_evento).empty();
         $(descricao_do_evento).append("<p>" + evt.description + "</p>");
-        // $(this).css('border-color', 'red');
-        $(".selecionado").removeClass("selecionado");
-        $(this).addClass("selecionado");
+        $(this).css('border-color', 'red');
+        
+        // $(".selecionado").removeClass("selecionado");
+        // $(this).addClass("selecionado");
       } 
 
       // eventMouseover: function(event, jsEvent, view) {
