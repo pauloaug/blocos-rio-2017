@@ -59,7 +59,8 @@
       eventos.push({
         "title": d.bloco + " - " + d.bairro,
         "start": d.desfile,
-        "end": d.final
+        "end": d.final,
+        "description": "local da concentracao: " + d["local da concentracao"] + "\n" + "percurso: " + "\n" + d.percurso
       });
     });
     return eventos;
@@ -82,6 +83,9 @@
       editable: false,
       eventLimit: false, // allow "more" link when too many events
       events: listarEventos()
+      eventRender: function(event,element) {
+        element.append(event.description);
+      }
     });
     
   });
