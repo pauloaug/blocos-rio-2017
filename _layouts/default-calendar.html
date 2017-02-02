@@ -84,16 +84,23 @@
       eventLimit: false, // allow "more" link when too many events
       events: listarEventos(),
 
-      eventMouseover: function(event, jsEvent, view) {
-        $('.fc-event-inner', this).append('<div id=\"teste\" class=\"hover-end\">'+$.fullCalendar.formatDate(event.end, 'h:mmt')+'</div>');
-      },
-      eventMouseout: function(event, jsEvent, view) {
-          $('#teste').remove();
-      },
-      
-      eventRender: function(event,element) {
-        // element.append("<p> teste <p>");
-      }
+      eventClick: function(evt, jsEvent, view) {
+
+              // change the border color just for fun
+              $(this).append(evt.description);
+
+          } 
+
+      // eventMouseover: function(event, jsEvent, view) {
+      //   $('.fc-event-inner', this).append('<div id=\"teste\" class=\"hover-end\">'+$.fullCalendar.formatDate(event.end, 'h:mmt')+'</div>');
+      // },
+      // eventMouseout: function(event, jsEvent, view) {
+      //     $('#teste').remove();
+      // },
+
+      // eventRender: function(event,element) {
+      //   // element.append("<p> teste <p>");
+      // }
     });
     
   });
