@@ -87,8 +87,9 @@
       eventClick: function(evt, jsEvent, view) {
         $(descricao_do_evento).empty();
         $(descricao_do_evento)
-          .append("<p>" + evt.dados.bloco + "</p>")
-          .append("<p>" + evt["local da concentracao"] + "</p>");
+          .append("<h2>" + evt.dados.bloco + "</h2>")
+          .append("<dl>")
+            .append("<dt>Bloco: <dt> <dd>" + evt.dados["local da concentracao"] + "</dd>");
         
         // $(this).css('border-color', 'red');
 
