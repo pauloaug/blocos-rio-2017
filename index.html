@@ -18,11 +18,11 @@
 <script>
 	
 	// criar json-ld, fb open graph e twitter card
-	var dados = {{ site.data.output.dados | jsonify }};
-	var ld = {[]};
+	var dados = JSON.parse({{ site.data.output.dados | jsonify }});
+	var ld = {"blocos": []};
 	ld["@context"] = "http://schema.org";
 	dados.forEach(function(d){
-		ld.push({
+		ld.blocos.push({
 			"@type": "MusicEvent",
 			"location": {
 		      "@type": "Place",
