@@ -42,6 +42,12 @@
 		});
 	});
 
+	var script = document.createElement( 'script' );
+	script.type = 'application/ld+json';
+	var t = document.createTextNode(ld,null,2));
+	script.appendChild(t);
+	$("head").append(script);
+
 
 	function listarEventos() {
 		var dados = {{ site.data.output.dados | jsonify }};
