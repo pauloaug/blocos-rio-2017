@@ -85,6 +85,7 @@
       events: listarEventos(),
 
       eventClick: function(evt, jsEvent, view) {
+        $(descricao_do_evento).empty();
         $(descricao_do_evento).append("<p>" + evt.description + "</p>");
       } 
 
