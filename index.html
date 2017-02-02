@@ -44,7 +44,7 @@
 
 	var script = document.createElement( 'script' );
 	script.type = 'application/ld+json';
-	var t = document.createTextNode(ld,null,2);
+	var t = document.createTextNode(JSON.stringify(ld),null,2);
 	script.appendChild(t);
 	$("head").append(script);
 
