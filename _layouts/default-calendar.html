@@ -87,13 +87,22 @@
       eventClick: function(evt, jsEvent, view) {
         $(descricao_do_evento).empty();
         $(descricao_do_evento)
-          .append(`<h2> ${evt.dados.bloco} </h2>
+          .append(` <h2> ${evt.dados.bloco} </h2>
                     <dl>
-                      <dt>Local da Concentração: </dt>
+                      <dt>Concentração: </dt>
                       <dd>${evt.dados["local da concentracao"]}</dd>
-                
+                      <dd>moment(${evt.dados["concentração"]}).format("LLLL")</dd>
+
+                      <dt>Bairro: </dt>
+                      <dd>${evt.dados["bairro"]}</dd>                
+
                       <dt>Percurso: </dt>
                       <dd>${evt.dados.percurso}</dd>
+
+                      <dt>Público Estimado: </dt>
+                      <dd>${evt.dados["público estimado"]}</dd>
+
+
                     </dl>`
                   );
 
