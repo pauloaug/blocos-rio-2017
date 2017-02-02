@@ -60,7 +60,7 @@
         "title": d.bloco + " - " + d.bairro,
         "start": d.desfile,
         "end": d.final,
-        "description": d.percurso
+        "dados": d
       });
     });
     return eventos;
@@ -86,11 +86,14 @@
 
       eventClick: function(evt, jsEvent, view) {
         $(descricao_do_evento).empty();
-        $(descricao_do_evento).append("<p>" + evt.description + "</p>");
-        $(this).css('border-color', 'red');
+        $(descricao_do_evento)
+          .append("<p>" + evt.dados.bloco + "</p>")
+          .append("<p>" + evt["local da concentracao"] + "</p>");
         
-        // $(".selecionado").removeClass("selecionado");
-        // $(this).addClass("selecionado");
+        // $(this).css('border-color', 'red');
+
+        $(".selecionado").removeClass("selecionado");
+        $(this).addClass("selecionado");
       } 
 
       // eventMouseover: function(event, jsEvent, view) {
@@ -125,6 +128,11 @@
 
   .selecionado {
     border-color: red;
+  }
+
+  #descricao_do_evento {
+    margin: 40px 10px;
+    padding: 10 px;
   }
 
   .hover-end{padding:0;margin:0;font-size:75%;text-align:center;position:absolute;bottom:0;width:100%;opacity:.8}
