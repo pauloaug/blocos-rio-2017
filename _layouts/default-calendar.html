@@ -120,7 +120,11 @@
 
                     </dl>`
           );
-        $(descricao_do_evento).focus();
+
+        // $(descricao_do_evento).focus();
+        $('html, body').animate({
+            scrollTop: $("#descricao_do_evento").offset().top
+          }, 2000);
 
         $(".selecionado").removeClass("selecionado");
         $(this).addClass("selecionado");
