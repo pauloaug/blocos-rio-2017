@@ -2,7 +2,7 @@
 # This file contains configuration flags to customize your site
 #
 
-title: Blocos de Carnaval do Rio
+title: Blocos do Rio
 
 show_downloads: true
 
@@ -10,7 +10,7 @@ show_downloads: true
 name: Blocos do Rio
 
 # Short bio or description (displayed in the header)
-description: Agenda dos blocos do carnaval 2017 no Rio de Janeiro
+description: Agenda dos blocos de carnaval do Rio de Janeiro
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
