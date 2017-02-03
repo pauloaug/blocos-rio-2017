@@ -83,6 +83,7 @@
       editable: false,
       eventLimit: true, // allow "more" link when too many events
       events: listarEventos(),
+      timeFormat: 'H(:mm)', // uppercase H for 24-hour clock
 
       eventClick: function(evt, jsEvent, view) {
         $(descricao_do_evento).empty();
@@ -150,7 +151,8 @@
   }
 
   .selecionado {
-    border-color: red;
+    border-color: yellow;
+    border-width: 2 px;
   }
 
   #descricao_do_evento {
@@ -190,7 +192,7 @@
         {% if site.show_downloads %}
           <ul>
             <li><a href="assets/download/blocos.ics">Download <strong>Calendário</strong></a></li>
-            <li><a href="_data/output.json">Download <strong>JSON</strong></a></li>
+            <li><a href="assets/download/blocos.json">Download <strong>JSON</strong></a></li>
             <li><a href="https://github.com/pauloaug/blocos-rio-2017/tree/gh-pages">View On <strong>GitHub</strong></a></li>
           </ul>
         {% endif %}
