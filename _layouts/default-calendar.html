@@ -96,7 +96,7 @@
       eventLimit: true, // allow "more" link when too many events
       events: listarEventos(),
       timeFormat: 'H:mm', // uppercase H for 24-hour clock
-      scrollTime: moment().format(),
+      scrollTime: moment().format('HH:mm'),
 
       eventClick: function(evt, jsEvent, view) {
         $(descricao_do_evento).empty();
