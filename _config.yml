@@ -2,6 +2,9 @@
 # This file contains configuration flags to customize your site
 #
 
+title: Blocos do Rio
+show_downloads: true
+
 # Name of your site (displayed in the header)
 name: Blocos do Rio
 
