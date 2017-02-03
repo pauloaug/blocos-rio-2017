@@ -85,7 +85,8 @@
         center: 'title',
         right: 'month,agendaDay,listMonth'
       },
-      defaultView: "listMonth",
+      // defaultView: "listMonth",
+      defaultView: "agendaDay",
       // aspectRatio: 0.7,
       locale: "pt-br",
       defaultDate: '2017-02-17',
@@ -94,6 +95,7 @@
       eventLimit: true, // allow "more" link when too many events
       events: listarEventos(),
       timeFormat: 'H:mm', // uppercase H for 24-hour clock
+      scrollTime: moment(),
 
       eventClick: function(evt, jsEvent, view) {
         $(descricao_do_evento).empty();
@@ -116,15 +118,8 @@
 
 
                     </dl>`
-                  );
-
-          // .append("<h2>" + evt.dados.bloco + "</h2>")
-          // .append("<dl>")
-          //   .append("<dt>Local da Concentração: </dt> <dd>" + evt.dados["local da concentracao"])
-          //   .append("<dt>Percurso: </dt> <dd>" + evt.dados.percurso)
-          // .append("</dd>");
-        
-        // $(this).css('border-color', 'red');
+          );
+        $(descricao_do_evento).focus();
 
         $(".selecionado").removeClass("selecionado");
         $(this).addClass("selecionado");
@@ -210,7 +205,7 @@
 
       {{ content }}
 
-      <div id="descricao_do_evento"></div>
+      <div id="descricao_do_evento" tabindex="-1"></div>
 
       </section>
       <footer>
