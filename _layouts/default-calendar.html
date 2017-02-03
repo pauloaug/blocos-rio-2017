@@ -162,6 +162,9 @@
 
 
 </style>
+
+<script type="text/javascript" src="http://platform-api.sharethis.com/js/sharethis.js#property=5893f57031d1490011c3b515"></script>
+
 </head>
 
   <body>
@@ -174,6 +177,8 @@
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
+        <div class="sharethis-inline-share-buttons"></div>
+
         {% if site.github.is_project_page %}
           <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ github_name }}</small></a></p>
         {% endif %}
@@ -185,7 +190,7 @@
         {% if site.show_downloads %}
           <ul>
             <li><a href="assets/download/blocos.ics">Download <strong>Calendário</strong></a></li>
-            <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
+            <li><a href="_data/output.json">Download <strong>JSON</strong></a></li>
             <li><a href="https://github.com/pauloaug/blocos-rio-2017/tree/gh-pages">View On <strong>GitHub</strong></a></li>
           </ul>
         {% endif %}
