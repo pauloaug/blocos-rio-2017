@@ -3,13 +3,14 @@
 #
 
 title: Blocos do Rio
+
 show_downloads: true
 
 # Name of your site (displayed in the header)
 name: Blocos do Rio
 
 # Short bio or description (displayed in the header)
-description: Blocos de Carnaval do Rio em 2017
+description: Blocos do Carnaval 2017 no Rio
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
