@@ -87,7 +87,7 @@
       },
       // defaultView: "listMonth",
       defaultView: "agendaDay",
-      // aspectRatio: 0.7,
+      aspectRatio: 1,
       locale: "pt-br",
       defaultDate: moment().format(),
       // defaultDate: '2017-02-17',
@@ -193,6 +193,7 @@
         <div class="sharethis-inline-share-buttons"></div>
 
         {% if site.github.is_project_page %}
+          <br>
           <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ github_name }}</small></a></p>
         {% endif %}
 
